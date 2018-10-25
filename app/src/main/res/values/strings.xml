@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CloudProjectComplete</string>
+    <string name="facebook_app_id">484298828646224</string>
+    <string name="fb_login_protocol_scheme">fb484298828646224</string>
+</resources>

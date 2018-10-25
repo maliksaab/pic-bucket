@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1001922367108",
+    "firebase_url": "https://cloudtryagain-31e20.firebaseio.com",
+    "project_id": "cloudtryagain-31e20",
+    "storage_bucket": "cloudtryagain-31e20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001922367108:android:d95978eb836927c1",
+        "android_client_info": {
+          "package_name": "com.taimoorhaider.www.cloudtryagain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001922367108-6tp5n2ejvfe61rtjb8j2naue9per763k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taimoorhaider.www.cloudtryagain",
+            "certificate_hash": "62834b733ac4d16602764552b66b8479bdbdcaee"
+          }
+        },
+        {
+          "client_id": "1001922367108-0hefv2oolqn506fptge7am6o52178mjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2MrQzbkKe6keve_Fup2qW6tEEJgu_N8U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001922367108-0hefv2oolqn506fptge7am6o52178mjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
