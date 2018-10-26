@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthListener;
     private GoogleApiClient mGoogleSignInClient;
     private CallbackManager callbackManager;
+    private FirebaseUser currentUser;
 
 
     @Override
@@ -57,14 +58,18 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+        currentUser = mAuth.getCurrentUser();
 
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 
         callbackManager = CallbackManager.Factory.create();
         if(currentUser != null){    //user already signed in
-            startActivity(new Intent(getApplicationContext(), Gallery.class));
+            Intent intent = new Intent(getApplicationContext(), Gallery.class);
+            intent.putExtra("userEmail", currentUser.getEmail());
+//            intent.putExtra("userName", currentUser.getDisplayName());
+//            intent.putExtra("userPhone", currentUser.getPhoneNumber());
+            startActivity(intent);
         }
 
 
@@ -89,8 +94,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).addApi(Auth.GOOGLE_SIGN_IN_API,gso).build();
     }
-
-
 
     @Override
     protected void onStart() {

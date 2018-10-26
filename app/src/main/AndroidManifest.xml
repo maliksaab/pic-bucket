@@ -11,13 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".EmailSignUpActivity" />
         <activity android:name=".UserProfileDetails" />
-        <activity android:name=".Gallery" />
+        <activity
+            android:name=".Gallery"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -39,14 +38,19 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".SplashScreen" android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DiaryParentActivity"
+            android:label="@string/title_activity_diary_parent"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

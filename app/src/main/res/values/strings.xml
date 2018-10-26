@@ -2,4 +2,20 @@
     <string name="app_name">CloudProjectComplete</string>
     <string name="facebook_app_id">484298828646224</string>
     <string name="fb_login_protocol_scheme">fb484298828646224</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Gallery fragment</string>
+    <string name="title_activity_diary_parent">DiaryParentActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+        <string-array name="diary_options_array">
+            <item>With-In City</item>
+            <item>Out-Of City</item>
+            <item>Other Country</item>
+        </string-array>
+
 </resources>

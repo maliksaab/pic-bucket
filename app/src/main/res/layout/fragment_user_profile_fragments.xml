@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".user_profile_fragments">
 
     <LinearLayout
         android:layout_gravity="top"
@@ -10,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.4"/>
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.4"/>
     </LinearLayout>
 
     <LinearLayout
@@ -30,11 +31,10 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <EditText
-            android:id="@+id/user_name_profile"
+            android:id="@+id/user_name_profile_fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="e.x jon doe"
             android:inputType="textPersonName" />
 
         <TextView
@@ -45,11 +45,10 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <EditText
-            android:id="@+id/user_number_profile"
+            android:id="@+id/user_number_profile_fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="e.x +66554433221"
             android:inputType="phone" />
 
         <LinearLayout
@@ -65,10 +64,9 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/user_age_profile"
+                android:id="@+id/user_age_profile_fragment"
                 android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:hint="e.x 25" />
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -78,11 +76,10 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/user_city_profile"
+                android:id="@+id/user_city_profile_fragment"
                 android:layout_width="248dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:hint="e.x London" />
+                android:layout_weight="0.6" />
 
 
         </LinearLayout>
@@ -96,31 +93,25 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <EditText
-            android:id="@+id/user_country_profile"
+            android:id="@+id/user_country_profile_fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="e.x United Kingdom"
             android:inputType="textPersonName" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <Button
+            <Button android:layout_weight="0.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:onClick="EnableEdit"
                 android:text="Edit Profile" />
 
-            <Button
+            <Button android:layout_weight="0.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:onClick="SaveEdits"
-                android:text="Update" />
+                android:text="Update"/>
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>
