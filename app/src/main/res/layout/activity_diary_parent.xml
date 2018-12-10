@@ -4,9 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout android:layout_margin="8dp"
+    <LinearLayout
+        android:layout_weight="0.1"
         android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:orientation="horizontal">
 
         <TextView
@@ -25,5 +27,27 @@
 
             android:spinnerMode="dropdown" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.95"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add_post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AddNewPost_Clicked"
+            android:text="Add New  Post" />
     </LinearLayout>
 </LinearLayout>

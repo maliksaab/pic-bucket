@@ -46,7 +46,6 @@ public class UserProfileDetails extends AppCompatActivity {
 //        userAuthName = intent.getStringExtra("userName");
 //        userAuthPhone = intent.getStringExtra("userPhone");
 
-
         getEditTextsHandles();
 
         completeFirebasePath = "/" + Gallery.FireBaseRootDirectory_Profiles + "/" + userAuthEmail;
@@ -63,17 +62,13 @@ public class UserProfileDetails extends AppCompatActivity {
                     } else {
                         ///     NEW user
                         Toast.makeText(UserProfileDetails.this, "ERROR: Fail To Fetch Data From Cloud", Toast.LENGTH_SHORT).show();
-
                     }
                 } else {
                     //         Log.d(TAG, "get failed with ", task.getException());
                 }
             }
         });
-
-
     }
-
     private void setEditTexts() {
         if (!(
                 userProfileDataFromCloud.get("age") == "" &&

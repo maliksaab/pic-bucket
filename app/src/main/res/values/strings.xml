@@ -12,10 +12,10 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
-        <string-array name="diary_options_array">
-            <item>With-In City</item>
-            <item>Out-Of City</item>
-            <item>Other Country</item>
-        </string-array>
+    <string-array name="diary_options_array">
+        <item>With-In City</item>
+        <item>Out-Of City</item>
+        <item>Other Country</item>
+    </string-array>
 
 </resources>

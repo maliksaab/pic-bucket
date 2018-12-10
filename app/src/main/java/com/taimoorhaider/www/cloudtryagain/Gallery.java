@@ -114,6 +114,15 @@ public class Gallery extends AppCompatActivity {
                             }
                             break;
 
+                            case R.id.nav_locations: {
+                                Intent intent = new Intent(getApplicationContext(), Locations.class);
+                                startActivity(intent);
+
+//intent.putExtra("userName", userAuthName);
+//intent.putExtra("userPhone", userAuthPhone);
+                            }
+                            break;
+
                             default:
                                 break;
                         }

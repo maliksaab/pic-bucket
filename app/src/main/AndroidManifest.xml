@@ -3,6 +3,7 @@
     package="com.taimoorhaider.www.cloudtryagain">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -51,6 +52,8 @@
             android:name=".DiaryParentActivity"
             android:label="@string/title_activity_diary_parent"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".new_diary_post" />
+        <activity android:name=".Locations"></activity>
     </application>
 
 </manifest>

@@ -17,9 +17,9 @@
             android:title="Wishlist" />
 
         <item
-            android:id="@+id/nav_checkIn"
+            android:id="@+id/nav_locations"
             android:icon="@drawable/ic_menu_checkins"
-            android:title="Check In" />
+            android:title="Location" />
 
         <item
             android:id="@+id/nav_profile"
